@@ -1168,7 +1168,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #d617ff;
+  background: #361d67;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2289,51 +2289,35 @@ embed {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-pre,
-code {
-  background-color: #282c34; /* 黑色背景 */
-  color: #abb2bf; /* 代码文字颜色 */
-  font-family: "Courier New", monospace; /* 修改字体 */
-  border-radius: 10px; /* 添加圆角 */
-  padding: 15px; /* 内边距 */
-  position: relative; /* 确保圆点和复制按钮可定位 */
-  overflow: auto; /* 添加滚动条支持 */
+.highlight {
+  background-color: #000 !important;
+  color: #fff !important;
 }
-pre::before {
-  content: '';
-  display: flex;
-  gap: 8px; /* 圆点之间的间隔 */
+.highlight .gutter pre {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+.highlight .gutter .line:nth-child(3n+1) {
+  color: #ff5f56 !important;
+}
+.highlight .gutter .line:nth-child(3n+2) {
+  color: #64d9cc !important;
+}
+.highlight .gutter .line:nth-child(3n+3) {
+  color: #f9c74f !important;
+}
+.copy-btn {
   position: absolute;
-  top: 8px; /* 距离顶部的距离 */
-  left: 8px; /* 距离左侧的距离 */
+  top: 10px;
+  right: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 14px;
 }
-pre::before span {
-  display: block;
-  height: 12px; /* 圆点大小 */
-  width: 12px;
-  border-radius: 50%; /* 圆形 */
-}
-pre::before span:nth-child(1) {
-  background-color: #ff5f56; /* 红色圆点 */
-}
-pre::before span:nth-child(2) {
-  background-color: #ffbd2e; /* 黄色圆点 */
-}
-pre::before span:nth-child(3) {
-  background-color: #27c93f; /* 绿色圆点 */
-}
-pre .copy-button {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  background-color: #3498db; /* 按钮背景色 */
-  color: #fff; /* 按钮文字颜色 */
-  border: none; /* 去掉边框 */
-  padding: 5px 10px; /* 内边距 */
-  border-radius: 5px; /* 圆角按钮 */
-  font-size: 12px; /* 字体大小 */
-  cursor: pointer; /* 鼠标指针样式 */
-}
-pre .copy-button:hover {
-  background-color: #2980b9; /* 悬停时背景色 */
+.copy-btn:hover {
+  background-color: #0056b3;
 }
