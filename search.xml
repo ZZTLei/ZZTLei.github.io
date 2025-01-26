@@ -13,11 +13,7 @@
       
       <categories>
           
-          <category> hexo </category>
-          
-          <category> github </category>
-          
-          <category> search </category>
+          <category> 基于github+hexo的博客 </category>
           
       </categories>
       
@@ -48,8 +44,6 @@
           
           <category> Windows系统配置 </category>
           
-          <category> WSL </category>
-          
       </categories>
       
       
@@ -75,11 +69,7 @@
       
       <categories>
           
-          <category> blog </category>
-          
-          <category> github </category>
-          
-          <category> hexo </category>
+          <category> 基于github+hexo的博客 </category>
           
       </categories>
       
