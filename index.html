@@ -135,7 +135,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">6</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">7</span></a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -188,6 +188,144 @@
 
           <div class="content index posts-expand">
             
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/01/27/%E9%85%8D%E7%BD%AEgithub-hexo%E5%8D%9A%E5%AE%A2%E4%BD%BF%E4%B9%8B%E5%9C%A8%E5%85%B6%E4%BB%96%E7%BD%91%E9%A1%B5%E4%B8%8A%E8%83%BD%E8%A2%AB%E6%A3%80%E7%B4%A2%E5%88%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="泽中听雷">
+      <meta itemprop="description" content="日常生活中的一些零散记录">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="泽中听雷的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/01/27/%E9%85%8D%E7%BD%AEgithub-hexo%E5%8D%9A%E5%AE%A2%E4%BD%BF%E4%B9%8B%E5%9C%A8%E5%85%B6%E4%BB%96%E7%BD%91%E9%A1%B5%E4%B8%8A%E8%83%BD%E8%A2%AB%E6%A3%80%E7%B4%A2%E5%88%B0/" class="post-title-link" itemprop="url">配置github+hexo博客使之在其他网页上能被检索到</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2025-01-27 11:59:30 / 修改时间：12:01:25" itemprop="dateCreated datePublished" datetime="2025-01-27T11:59:30+08:00">2025-01-27</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%9F%BA%E4%BA%8Egithub-hexo%E7%9A%84%E5%8D%9A%E5%AE%A2/" itemprop="url" rel="index"><span itemprop="name">基于github+hexo的博客</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>要让你的 GitHub + Hexo 博客能够在其他网页（比如 Google、Bing 等搜索引擎）上被搜索到，你需要对博客进行 SEO（搜索引擎优化）设置。以下是一些关键步骤：</p>
+<hr>
+<h3 id="1-确保博客可以被搜索引擎抓取"><a href="#1-确保博客可以被搜索引擎抓取" class="headerlink" title="1. 确保博客可以被搜索引擎抓取"></a><strong>1. 确保博客可以被搜索引擎抓取</strong></h3><ul>
+<li><p><strong>检查是否允许爬虫访问</strong>：确认你的博客没有阻止搜索引擎爬取内容。</p>
+<ul>
+<li>在 Hexo 项目的根目录下，查看或创建 <code>robots.txt</code> 文件，内容如下：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">User-agent: *</span><br><span class="line">Disallow:</span><br><span class="line">Sitemap: https://yourusername.github.io/sitemap.xml</span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>Disallow:</code> 表示允许所有搜索引擎抓取。</li>
+<li>替换 <code>https://yourusername.github.io</code> 为你的博客地址。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>开启 GitHub Pages 的索引功能</strong>：<br>默认情况下，GitHub Pages 允许搜索引擎抓取。如果你曾更改设置，请确保在 GitHub 仓库的“Settings”中没有启用 “Restrict pages to private” 选项。</p>
+</li>
+</ul>
+<hr>
+<h3 id="2-配置-Sitemap-和-Meta-信息"><a href="#2-配置-Sitemap-和-Meta-信息" class="headerlink" title="2. 配置 Sitemap 和 Meta 信息"></a><strong>2. 配置 Sitemap 和 Meta 信息</strong></h3><p>Sitemap 和 Meta 标签对于搜索引擎优化非常重要。</p>
+<h4 id="2-1-生成-Sitemap"><a href="#2-1-生成-Sitemap" class="headerlink" title="2.1 生成 Sitemap"></a>2.1 <strong>生成 Sitemap</strong></h4><p>Sitemap 是搜索引擎了解你网站结构的重要文件。</p>
+<ol>
+<li>安装 <code>hexo-generator-sitemap</code> 插件：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure></li>
+<li>在 Hexo 的 <code>_config.yml</code> 中添加 Sitemap 配置：<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">sitemap:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">sitemap.xml</span></span><br></pre></td></tr></table></figure></li>
+<li>重新生成并部署博客：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+之后，博客的根目录会生成 <code>sitemap.xml</code> 文件。</li>
+</ol>
+<h4 id="2-2-生成-RSS-Feed"><a href="#2-2-生成-RSS-Feed" class="headerlink" title="2.2 生成 RSS Feed"></a>2.2 <strong>生成 RSS Feed</strong></h4><p>RSS Feed 可以帮助搜索引擎更好地抓取博客内容。</p>
+<ol>
+<li>安装 <code>hexo-generator-feed</code> 插件：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure></li>
+<li>在 <code>_config.yml</code> 中配置：<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">feed:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">atom</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">atom.xml</span></span><br><span class="line">  <span class="attr">limit:</span> <span class="number">20</span></span><br><span class="line">  <span class="attr">hub:</span></span><br><span class="line">  <span class="attr">content:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></li>
+<li>部署后，你的博客会生成 <code>atom.xml</code> 文件。</li>
+</ol>
+<h4 id="2-3-优化-Meta-标签"><a href="#2-3-优化-Meta-标签" class="headerlink" title="2.3 优化 Meta 标签"></a>2.3 <strong>优化 Meta 标签</strong></h4><ol>
+<li>确保你的主题支持 SEO。如果主题没有内置 SEO，可以手动添加到 <code>themes/&lt;your-theme&gt;/layout/_partial/head.ejs</code> 中：<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;description&quot;</span> <span class="attr">content</span>=<span class="string">&quot;你的博客描述&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;keywords&quot;</span> <span class="attr">content</span>=<span class="string">&quot;关键词1, 关键词2, Hexo博客, 技术博客&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;author&quot;</span> <span class="attr">content</span>=<span class="string">&quot;你的名字&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li>修改 <code>_config.yml</code> 中的站点信息：<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">title:</span> <span class="string">你的博客标题</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">你的博客简介</span></span><br><span class="line"><span class="attr">keywords:</span> <span class="string">博客,</span> <span class="string">技术,</span> <span class="string">Hexo</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<hr>
+<h3 id="3-提交站点给搜索引擎"><a href="#3-提交站点给搜索引擎" class="headerlink" title="3. 提交站点给搜索引擎"></a><strong>3. 提交站点给搜索引擎</strong></h3><h4 id="3-1-提交给-Google"><a href="#3-1-提交给-Google" class="headerlink" title="3.1 提交给 Google"></a>3.1 <strong>提交给 Google</strong></h4><ol>
+<li>进入 <a target="_blank" rel="noopener" href="https://search.google.com/search-console/">Google Search Console</a>。</li>
+<li>添加你的博客网址为新站点。</li>
+<li>提交 <code>sitemap.xml</code> 文件路径：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://yourusername.github.io/sitemap.xml</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="3-2-提交给-Bing"><a href="#3-2-提交给-Bing" class="headerlink" title="3.2 提交给 Bing"></a>3.2 <strong>提交给 Bing</strong></h4><ol>
+<li>访问 <a target="_blank" rel="noopener" href="https://www.bing.com/webmasters">Bing Webmaster</a>。</li>
+<li>添加站点并验证。</li>
+<li>提交 <code>sitemap.xml</code> 文件。</li>
+</ol>
+<h4 id="3-3-其他搜索引擎"><a href="#3-3-其他搜索引擎" class="headerlink" title="3.3 其他搜索引擎"></a>3.3 <strong>其他搜索引擎</strong></h4><p>对于其他搜索引擎（如百度、Yandex），也可以通过类似的方法提交 Sitemap。</p>
+<hr>
+<h3 id="4-优化内容和结构"><a href="#4-优化内容和结构" class="headerlink" title="4. 优化内容和结构"></a><strong>4. 优化内容和结构</strong></h3><h4 id="4-1-设置友好的-URL"><a href="#4-1-设置友好的-URL" class="headerlink" title="4.1 设置友好的 URL"></a>4.1 <strong>设置友好的 URL</strong></h4><ul>
+<li>确保博客的 URL 简单且包含关键词。比如，将文章路径从默认的日期格式更改为更清晰的结构：<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">permalink:</span> <span class="string">:year/:month/:title/</span></span><br></pre></td></tr></table></figure></li>
+<li>修改 <code>_config.yml</code> 中的 <code>permalink</code> 设置。</li>
+</ul>
+<h4 id="4-2-发布高质量内容"><a href="#4-2-发布高质量内容" class="headerlink" title="4.2 发布高质量内容"></a>4.2 <strong>发布高质量内容</strong></h4><ul>
+<li>定期发布原创内容，这能提高你的博客在搜索引擎中的排名。</li>
+<li>在每篇文章中使用合适的标题（<code>&lt;h1&gt;</code> 和 <code>&lt;h2&gt;</code>），并包含关键字。</li>
+</ul>
+<h4 id="4-3-内链与外链"><a href="#4-3-内链与外链" class="headerlink" title="4.3 内链与外链"></a>4.3 <strong>内链与外链</strong></h4><ul>
+<li>在你的博客文章中链接到其他相关的内容。</li>
+<li>鼓励其他博客或平台链接到你的博客。</li>
+</ul>
+<hr>
+<h3 id="5-使用分析工具跟踪效果"><a href="#5-使用分析工具跟踪效果" class="headerlink" title="5. 使用分析工具跟踪效果"></a><strong>5. 使用分析工具跟踪效果</strong></h3><ul>
+<li>安装 Google Analytics：<ol>
+<li>注册 Google Analytics，获取跟踪代码。</li>
+<li>将代码添加到主题的 <code>head.ejs</code> 文件中。<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">async</span> <span class="attr">src</span>=<span class="string">&quot;https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">  <span class="variable language_">window</span>.<span class="property">dataLayer</span> = <span class="variable language_">window</span>.<span class="property">dataLayer</span> || [];</span></span><br><span class="line"><span class="language-javascript">  <span class="keyword">function</span> <span class="title function_">gtag</span>(<span class="params"></span>)&#123;dataLayer.<span class="title function_">push</span>(<span class="variable language_">arguments</span>);&#125;</span></span><br><span class="line"><span class="language-javascript">  <span class="title function_">gtag</span>(<span class="string">&#x27;js&#x27;</span>, <span class="keyword">new</span> <span class="title class_">Date</span>());</span></span><br><span class="line"><span class="language-javascript">  <span class="title function_">gtag</span>(<span class="string">&#x27;config&#x27;</span>, <span class="string">&#x27;YOUR_TRACKING_ID&#x27;</span>);</span></span><br><span class="line"><span class="language-javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+</ul>
+<hr>
+<h3 id="6-等待搜索引擎更新"><a href="#6-等待搜索引擎更新" class="headerlink" title="6. 等待搜索引擎更新"></a><strong>6. 等待搜索引擎更新</strong></h3><p>搜索引擎需要一定时间抓取和索引你的博客内容，通常会在几天到几周内完成。你可以通过搜索博客标题或特定关键词来检查是否已被索引。</p>
+<p><strong>总结</strong>：通过配置 <code>robots.txt</code>、生成 <code>sitemap.xml</code>、优化内容和提交搜索引擎，你的 GitHub + Hexo 博客很快就能被更多网页和搜索引擎检索到！</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
   
   
@@ -950,7 +1088,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
