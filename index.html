@@ -215,10 +215,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间: 2025-02-16 17:52:23 / 修改时间: 19:49:05" itemprop="dateCreated datePublished" datetime="2025-02-16T17:52:23+08:00">2025-02-16</time>
+              <time title="创建时间: 2025-02-16 17:52:23" itemprop="dateCreated datePublished" datetime="2025-02-16T17:52:23+08:00">2025-02-16</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间: 2025-02-23 15:59:01" itemprop="dateModified" datetime="2025-02-23T15:59:01+08:00">2025-02-23</time>
+              </span>
 
           
 
@@ -234,8 +240,7 @@
           <hr>
 <p>以下是一篇完整的Hexo博客内容，您可以直接部署到GitHub Pages。包含完整代码实现与开发详解：</p>
 <hr>
-<h1 id="基于Python的工业级S19文件处理工具开发全解"><a href="#基于Python的工业级S19文件处理工具开发全解" class="headerlink" title="基于Python的工业级S19文件处理工具开发全解"></a>基于Python的工业级S19文件处理工具开发全解</h1><p><img data-src="https://img-blog.csdnimg.cn/direct/9c3b3b3b3b3b4f7f8b3b3b3b3b3b3b3b.png" alt="S19 Processor"></p>
-<h2 id="一、S19文件格式深度解析"><a href="#一、S19文件格式深度解析" class="headerlink" title="一、S19文件格式深度解析"></a>一、S19文件格式深度解析</h2><h3 id="1-1-文件结构规范"><a href="#1-1-文件结构规范" class="headerlink" title="1.1 文件结构规范"></a>1.1 文件结构规范</h3><p>Motorola S-record格式由若干ASCII文本行组成，每行对应一个记录：</p>
+<h1 id="基于Python的工业级S19文件处理工具开发全解"><a href="#基于Python的工业级S19文件处理工具开发全解" class="headerlink" title="基于Python的工业级S19文件处理工具开发全解"></a>基于Python的工业级S19文件处理工具开发全解</h1><h2 id="一、S19文件格式深度解析"><a href="#一、S19文件格式深度解析" class="headerlink" title="一、S19文件格式深度解析"></a>一、S19文件格式深度解析</h2><h3 id="1-1-文件结构规范"><a href="#1-1-文件结构规范" class="headerlink" title="1.1 文件结构规范"></a>1.1 文件结构规范</h3><p>Motorola S-record格式由若干ASCII文本行组成，每行对应一个记录：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">S3157A12000102030405060708090A0B0C0D0E0F1072</span><br><span class="line">└┬┘└┬┘└────┬────┘└─────────┬─────────┘└┬┘</span><br><span class="line"> │  │   地址域         数据域      校验和</span><br><span class="line"> │ 记录长度</span><br><span class="line">记录类型</span><br></pre></td></tr></table></figure>
 
 <h3 id="1-2-记录类型对照表"><a href="#1-2-记录类型对照表" class="headerlink" title="1.2 记录类型对照表"></a>1.2 记录类型对照表</h3><table>
